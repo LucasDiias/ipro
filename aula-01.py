@@ -62,29 +62,48 @@ for i in range(pessoas):
                 totalDuasOuMais += 1
                 outrosDuasOuMais += 1
 
+if servidores > 0:
+    print()
+    print('-' * 70)
+    print(
+        f'Percentual de servidores burros condenados: {servidoresNaoVac / servidores * 100:.2f}%')
+    print(
+        f'Percentual de servidores vacinados com pelo menos uma dose: {servidoresUmaOuMais / servidores * 100:.2f}%')
+    print(
+        f'Percentual de servidores vacinados com mais de uma dose: {servidoresDuasOuMais / servidores * 100:.2f}%')
+else:
+    print()
+    print('-' * 70)
+    print('Não há servidores.')
+
+if alunos > 0:
+    print('-' * 70)
+    print(
+        f'Percentual de alunos burros condenados: {alunosNaoVac / alunos * 100:.2f}%')
+    print(
+        f'Percentual de alunos vacinados com pelo menos uma dose: {alunosUmaOuMais / alunos * 100:.2f}%')
+    print(
+        f'Percentual de alunos vacinados com mais de uma dose: {alunosDuasOuMais / alunos * 100:.2f}%')
+else:
+    print('-' * 70)
+    print('Não há alunos')
+
+if outros > 0:
+    print('-' * 70)
+    print(
+        f'Percentual de outros burros condenados: {outrosNaoVac / outros * 100:.2f}%')
+    print(
+        f'Percentual de outros vacinados com pelo menos uma dose: {outrosUmaOuMais / outros * 100:.2f}%')
+    print(
+        f'Percentual de outros vacinados com mais de uma dose: {outrosDuasOuMais / outros * 100:.2f}%')
+    print('-' * 70)
+else:
+    print('-' * 70)
+    print('Não há usuários de outras categorias.')
+    print('-' * 70)
+
 print('-' * 70)
-print(
-    f'Percentual de servidores burros condenados: {servidoresNaoVac / servidores * 100:.2f}%')
-print(
-    f'Percentual de servidores vacinados com pelo menos uma dose: {servidoresUmaOuMais / servidores * 100:.2f}%')
-print(
-    f'Percentual de servidores vacinados com mais de uma dose: {servidoresDuasOuMais / servidores * 100:.2f}%')
-print('-' * 70)
-print(
-    f'Percentual de alunos burros condenados: {alunosNaoVac / alunos * 100:.2f}%')
-print(
-    f'Percentual de alunos vacinados com pelo menos uma dose: {alunosUmaOuMais / alunos * 100:.2f}%')
-print(
-    f'Percentual de alunos vacinados com mais de uma dose: {alunosDuasOuMais / alunos * 100:.2f}%')
-print('-' * 70)
-print(
-    f'Percentual de outros burros condenados: {outrosNaoVac / outros * 100:.2f}%')
-print(
-    f'Percentual de outros vacinados com pelo menos uma dose: {outrosUmaOuMais / outros * 100:.2f}%')
-print(
-    f'Percentual de outros vacinados com mais de uma dose: {outrosDuasOuMais / outros * 100:.2f}%')
-print('-' * 70)
-print('Dentre os não vacinados:')
+print('\n\nDentre os não vacinados:')
 print(f'{alunosNaoVac / totalNaoVac * 100:.2f}% são alunos.')
 print(f'{servidoresNaoVac / totalNaoVac * 100:.2f}% são servidores.')
 print(f'{outrosNaoVac / totalNaoVac * 100:.2f}% são de outra área de atuação.')
