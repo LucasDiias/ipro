@@ -31,7 +31,7 @@ for i in range(pessoas):
         if doses == 0:
             totalNaoVac += 1
             servidoresNaoVac += 1
-        elif >= 1:
+        elif doses >= 1:
             totalUmaOuMais += 1
             servidoresUmaOuMais += 1
             if doses >= 2:
@@ -43,7 +43,7 @@ for i in range(pessoas):
         if doses == 0:
             totalNaoVac += 1
             alunosNaoVac += 1
-        elif >= 1:
+        elif doses >= 1:
             totalUmaOuMais += 1
             alunosUmaOuMais += 1
             if doses >= 2:
@@ -55,7 +55,7 @@ for i in range(pessoas):
         if doses == 0:
             totalNaoVac += 1
             outrosNaoVac += 1
-        elif >= 1:
+        elif doses >= 1:
             totalUmaOuMais += 1
             outrosUmaOuMais += 1
             if doses >= 2:
