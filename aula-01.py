@@ -21,7 +21,7 @@ totalUmaOuMais = 0
 totalDuasOuMais = 0
 
 for i in range(pessoas):
-    print('---------------------------------------------------')
+    print('-' * 70)
     print('(0) Servidor\n(1) Aluno\n(2) Outros')
     tipo = int(input('Insira sua área de atuação: '))
     doses = int(input(f'Quantas doses a {i+1}ª pessoa tomou? '))
@@ -62,28 +62,28 @@ for i in range(pessoas):
                 totalDuasOuMais += 1
                 outrosDuasOuMais += 1
 
-print('----------------------------------------------------------------')
+print('-' * 70)
 print(
     f'Percentual de servidores burros condenados: {servidoresNaoVac / servidores * 100:.2f}%')
 print(
     f'Percentual de servidores vacinados com pelo menos uma dose: {servidoresUmaOuMais / servidores * 100:.2f}%')
 print(
     f'Percentual de servidores vacinados com mais de uma dose: {servidoresDuasOuMais / servidores * 100:.2f}%')
-print('----------------------------------------------------------------')
+print('-' * 70)
 print(
     f'Percentual de alunos burros condenados: {alunosNaoVac / alunos * 100:.2f}%')
 print(
     f'Percentual de alunos vacinados com pelo menos uma dose: {alunosUmaOuMais / alunos * 100:.2f}%')
 print(
     f'Percentual de alunos vacinados com mais de uma dose: {alunosDuasOuMais / alunos * 100:.2f}%')
-print('----------------------------------------------------------------')
+print('-' * 70)
 print(
     f'Percentual de outros burros condenados: {outrosNaoVac / outros * 100:.2f}%')
 print(
     f'Percentual de outros vacinados com pelo menos uma dose: {outrosUmaOuMais / outros * 100:.2f}%')
 print(
     f'Percentual de outros vacinados com mais de uma dose: {outrosDuasOuMais / outros * 100:.2f}%')
-print('----------------------------------------------------------------')
+print('-' * 70)
 print('Dentre os não vacinados:')
 print(f'{alunosNaoVac / totalNaoVac * 100:.2f}% são alunos.')
 print(f'{servidoresNaoVac / totalNaoVac * 100:.2f}% são servidores.')
@@ -98,4 +98,4 @@ print('Dentre os vacinados com mais de uma dose:')
 print(f'{alunosDuasOuMais / totalDuasOuMais * 100:.2f}% são alunos.')
 print(f'{servidoresDuasOuMais / totalDuasOuMais * 100:.2f}% são servidores.')
 print(f'{outrosDuasOuMais / totalDuasOuMais * 100:.2f}% são de outra área de atuação.')
-print('----------------------------------------------------------------')
+print('-' * 70)
