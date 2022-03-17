@@ -1,4 +1,4 @@
-numero = 1
+numero = 13
 soma = 0
 
 print('Insira 5 números a serem somados.\n')
