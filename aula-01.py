@@ -1,5 +1,4 @@
 pessoas = int(input('Quantas pessoas são ao todo? '))
-
 print()
 
 alunos = 0
@@ -23,10 +22,7 @@ totalDuasOuMais = 0
 
 for i in range(pessoas):
     print('---------------------------------------------------')
-    print('''(0) Servidor
-(1) Aluno
-(2) Outros
-''')
+    print('(0) Servidor\n(1) Aluno\n(2) Outros')
     tipo = int(input('Insira sua área de atuação: '))
     doses = int(input(f'Quantas doses a {i+1}ª pessoa tomou? '))
 
