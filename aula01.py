@@ -128,5 +128,5 @@ if totalUmaOuMais != 0:
             f'{outrosDuasOuMais / totalDuasOuMais * 100:.2f}% são de outra área de atuação.')
         print('-' * 70)
 else:
-    print('Infelizmente não há pessoas com uma ou mais doses da vacina.')
+    print('Infelizmente não há um infeliz que se salve.')
     print()
