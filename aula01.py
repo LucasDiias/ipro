@@ -104,7 +104,7 @@ else:
 
 print('-' * 70)
 if totalNaoVac != 0:
-    print('\n\nDentre os não vacinados:')
+    print('\n\nDentre os burros condenados:')
     print(f'{alunosNaoVac / totalNaoVac * 100:.2f}% são alunos.')
     print(f'{servidoresNaoVac / totalNaoVac * 100:.2f}% são servidores.')
     print(f'{outrosNaoVac / totalNaoVac * 100:.2f}% são de outra área de atuação.')
