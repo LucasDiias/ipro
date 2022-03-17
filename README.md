@@ -10,4 +10,4 @@ Repositório destinado a projetos feitos em sala de aula no ano letivo de 2021.
 
 **Objetivo:** Criar um programa que pergunte números ao usuários enquanto a soma desses números for inferior a 50, e, por fim, apresente sua soma.
 
-**Novos conceitos:** While - Estrutura de repetição.
+**Novos conceitos:** _While_ - Estrutura de repetição.
