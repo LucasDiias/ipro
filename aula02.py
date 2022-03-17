@@ -1,9 +1,8 @@
-numero = 13
 soma = 0
 
 print('Insira 5 números a serem somados.\n')
 
-while numero != 0:
+while soma <= 50:
     numero = int(input(f'Insira um inteiro: '))
     soma += numero
 
