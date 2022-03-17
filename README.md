@@ -8,4 +8,6 @@ Repositório destinado a projetos feitos em sala de aula no ano letivo de 2021.
 
 ## ✏️ Aula 02
 
-**Objetivo:** Criar um programa que pergunte 5 números ao usuário usando uma estrutura de repetição (_for_), e por fim apresente a soma desses números.
+**Objetivo:** Criar um programa que pergunte 5 números ao usuário usando uma estrutura de repetição, e por fim apresente a soma desses números.
+
+**Novos conceitos:** While - Estrutura de repetição.
