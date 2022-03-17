@@ -103,18 +103,30 @@ else:
     print('-' * 70)
 
 print('-' * 70)
-print('\n\nDentre os não vacinados:')
-print(f'{alunosNaoVac / totalNaoVac * 100:.2f}% são alunos.')
-print(f'{servidoresNaoVac / totalNaoVac * 100:.2f}% são servidores.')
-print(f'{outrosNaoVac / totalNaoVac * 100:.2f}% são de outra área de atuação.')
-print()
-print('Dentre os usuários ao menos uma dose:')
-print(f'{alunosUmaOuMais / totalUmaOuMais * 100:.2f}% são alunos.')
-print(f'{servidoresUmaOuMais / totalUmaOuMais * 100:.2f}% são servidores.')
-print(f'{outrosUmaOuMais / totalUmaOuMais * 100:.2f}% são de outra área de atuação.')
-print()
-print('Dentre os vacinados com mais de uma dose:')
-print(f'{alunosDuasOuMais / totalDuasOuMais * 100:.2f}% são alunos.')
-print(f'{servidoresDuasOuMais / totalDuasOuMais * 100:.2f}% são servidores.')
-print(f'{outrosDuasOuMais / totalDuasOuMais * 100:.2f}% são de outra área de atuação.')
-print('-' * 70)
+if totalNaoVac != 0:
+    print('\n\nDentre os não vacinados:')
+    print(f'{alunosNaoVac / totalNaoVac * 100:.2f}% são alunos.')
+    print(f'{servidoresNaoVac / totalNaoVac * 100:.2f}% são servidores.')
+    print(f'{outrosNaoVac / totalNaoVac * 100:.2f}% são de outra área de atuação.')
+    print()
+else:
+    'Felizmente não há ninguém condenado a morte!'
+    print()
+
+if totalUmaOuMais != 0:
+    print('Dentre os usuários ao menos uma dose:')
+    print(f'{alunosUmaOuMais / totalUmaOuMais * 100:.2f}% são alunos.')
+    print(f'{servidoresUmaOuMais / totalUmaOuMais * 100:.2f}% são servidores.')
+    print(f'{outrosUmaOuMais / totalUmaOuMais * 100:.2f}% são de outra área de atuação.')
+    print()
+
+    if totalDuasOuMais != 0:
+        print('Dentre os vacinados com mais de uma dose:')
+        print(f'{alunosDuasOuMais / totalDuasOuMais * 100:.2f}% são alunos.')
+        print(f'{servidoresDuasOuMais / totalDuasOuMais * 100:.2f}% são servidores.')
+        print(
+            f'{outrosDuasOuMais / totalDuasOuMais * 100:.2f}% são de outra área de atuação.')
+        print('-' * 70)
+else:
+    print('Infelizmente não há pessoas com uma ou mais doses da vacina.')
+    print()
