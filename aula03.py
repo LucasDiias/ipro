@@ -1,10 +1,23 @@
 from random import randint
+inicio = 1
+fim = 10
 
 numero = randint(1, 10)
 escolha = int(
-    input('Adivinhe o número que o computador escolheu entre 1 e 10: '))
+    input('Adivinhe um número entre 1 e 10: '))
+print(numero)
+while escolha != numero and inicio != fim:
 
-while escolha != numero:
-    escolha = int(input('Errou! Tente novamente: '))
+    if escolha < numero and escolha >= inicio:
+        inicio = escolha + 1
+    else:
+        fim = escolha - 1
 
-print(f'\nVocê acertou! O número escolhido pelo computador era: {numero}')
+    if inicio == fim:
+        print(f'\nPerdeste trouxa, o número era {numero}!')
+    else:
+        print('Você errou! Tente novamente.')
+        escolha = int(input(f'Adivinhe um número entre {inicio} e {fim}: '))
+
+if escolha == numero:
+    print(f'\nVocê acertou! O número escolhido pelo computador era: {numero}')
