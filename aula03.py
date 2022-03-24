@@ -10,7 +10,7 @@ while escolha != numero and inicio != fim:
 
     if escolha < numero and escolha >= inicio:
         inicio = escolha + 1
-    else:
+    elif escolha > numero and escolha <= fim:
         fim = escolha - 1
 
     if inicio == fim:
