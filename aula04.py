@@ -12,5 +12,7 @@ while True:
     usuarios += 1
     i += 1
 
-
-print(f'A média das idades apresentadas é de: {soma / usuarios:.2f}')
+if usuarios != 0:
+    print(f'A média das idades apresentadas é de: {soma / usuarios:.2f}')
+else:
+    print('Não há alunos')
