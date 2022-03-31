@@ -5,11 +5,7 @@ alunos = 'Niaclara', 'Ramon', 'Detetive Will', 'Pedro Danilo', 'Pedro', 'Lucas',
 presentes = 0
 
 for aluno in sorted(alunos):
-    presenca = input(f'{aluno} está presente? (P/A) ').upper()
-
-    while presenca != 'P' or presenca != 'A':
-        presenca = input(
-            f'Valor inválido. {aluno} está presente? (P/A) ').upper()
+    presenca = input(f'{aluno} está presente? (P/A)').upper()
 
     if presenca == 'P':
         presentes += 1
