@@ -16,7 +16,7 @@ try:
     while qtdeChutes > 0 and tracos != palavra:
         chute = input('\nAdivinhe uma letra: ').strip().lower()
 
-        if len(chute) > 1 and chute:
+        if len(chute) = 1:
             print('Você só pode tentar letras.')
         else:
             if chute not in chutes:
