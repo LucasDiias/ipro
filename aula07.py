@@ -1,6 +1,13 @@
 from os import system as sys
 sys('cls')
 
+def verSaldo(saldo):
+  print('*****************')
+  print('Opção: Ver saldo')
+  print('*****************')
+  print(f'Saldo: {saldo}')  
+  
+
 def main():
   saldo = 0.0
 
@@ -18,10 +25,7 @@ def main():
     print()
 
     if opcao == 1:
-      print('*****************')
-      print('Opção: Ver saldo')
-      print('*****************')
-      print(f'Saldo: {saldo}')
+      verSaldo(saldo)
 
     elif opcao == 2:
       print('*****************')
@@ -40,6 +44,7 @@ def main():
     continuar = input('\nDeseja continuar [S] ou [N]? ').strip().upper()
     if continuar == 'N':
       break
+
 
 if __name__ == '__main__':
   main()
