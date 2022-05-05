@@ -19,7 +19,6 @@ print(f'''{azul}JOGO DA FORCA{reset}
 Chances: {amarelo}{qtdeChances}{reset}\n''')
 print(''.join(tracos) + '\n')
 
-
 while qtdeChances > 0 and tracos != palavra:
     chute = input(f'{reset}Adivinhe uma letra ou tente a palavra: ').strip().lower()
 
