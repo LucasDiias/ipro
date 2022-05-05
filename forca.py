@@ -1,4 +1,5 @@
 from os import system as sys
+from random import choice
 sys('cls')
 
 verde = '\033[1;32m'
@@ -7,7 +8,9 @@ amarelo = '\033[1;33m'
 azul = '\033[1;34m'
 reset = '\033[0;0m'
 
-palavra = list('ergastoplasma')
+palavras = ['caderno', 'lapis', 'borracha', 'caneta', 'corretivo']
+
+palavra = list(choice(palavras))
 chances = []
 numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
